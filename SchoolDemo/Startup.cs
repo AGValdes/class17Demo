@@ -53,7 +53,15 @@ namespace SchoolDemo
       services.AddControllers().AddNewtonsoftJson(options =>
         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
       );
-
+            //registers services
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo()
+                {
+                    Title = "Ameilia's Awesome School",
+                    Version = "v1"
+                });
+            });
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -64,21 +72,19 @@ namespace SchoolDemo
       }
 
       app.UseRouting();
-
+      app.UseSwagger(options =>
+      {
+          options.RouteTemplate = "/api/{documentName}/swagger.json";
+      });
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/api/v1/swagger.json", "Ameilia's Awesome Demo");
+                options.RoutePrefix = "";
+            });
       app.UseEndpoints(endpoints =>
       {
-        endpoints.MapControllers();
+          endpoints.MapControllers();
 
-        endpoints.MapGet("/", async context =>
-        {
-          await context.Response.WriteAsync("Hello World!");
-        });
-
-        endpoints.MapGet("/hello", async context =>
-        {
-          // throw new InvalidOperationException("/hello isn't really working yet");
-          await context.Response.WriteAsync("Hey, John");
-        });
       });
     }
   }

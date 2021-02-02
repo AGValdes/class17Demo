@@ -155,3 +155,8 @@ C:\Users\valde\source\repos\class17Demo\SchoolDemo\obj\Debug\netcoreapp3.1\Schoo
 C:\Users\valde\source\repos\class17Demo\SchoolDemo\obj\Debug\netcoreapp3.1\SchoolDemo.dll
 C:\Users\valde\source\repos\class17Demo\SchoolDemo\obj\Debug\netcoreapp3.1\SchoolDemo.pdb
 C:\Users\valde\source\repos\class17Demo\SchoolDemo\obj\Debug\netcoreapp3.1\SchoolDemo.genruntimeconfig.cache
+C:\Users\valde\source\repos\class17Demo\SchoolDemo\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\valde\source\repos\class17Demo\SchoolDemo\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\valde\source\repos\class17Demo\SchoolDemo\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\valde\source\repos\class17Demo\SchoolDemo\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\valde\source\repos\class17Demo\SchoolDemo\obj\Debug\netcoreapp3.1\SchoolDemo.MvcApplicationPartsAssemblyInfo.cs
